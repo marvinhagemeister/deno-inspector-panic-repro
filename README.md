@@ -10,9 +10,7 @@ Steps to reproduce:
    `node_modules/vite/dist/node/chunks/dep-CMEinpL-.js`) before this line:
 
 ```ts
-if (useLegacyBuilder) {
-  await setupEnvironment(config$2.build.ssr ? "ssr" : "client", config$2);
-}
+if (useLegacyBuilder) await setupEnvironment(config$2.build.ssr ? "ssr" : "client", config$2);
 ```
 
 6. Click forward a few times -> panic
