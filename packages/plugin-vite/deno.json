@@ -1,0 +1,17 @@
+{
+  "name": "@fresh/plugin-vite",
+  "version": "0.0.3",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/mod.ts"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "preact"
+  },
+  "imports": {
+    "@types/node": "npm:@types/node@^24.1.0",
+    "preact": "npm:preact@^10.26.9",
+    "vite": "npm:vite@^7.1.2"
+  }
+}

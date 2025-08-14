@@ -1,0 +1,30 @@
+{
+  "vendor": true,
+  "nodeModulesDir": "auto",
+  "workspace": [
+    "./packages/*"
+  ],
+  "exclude": [
+    "**/_fresh/*",
+    "**/tmp/*",
+    "*/tests_OLD/**",
+    "**/vite.config.ts.*",
+    "*/vite.config.ts.*",
+    "vite.config.ts.*"
+  ],
+  "imports": {
+    "@std/uuid": "jsr:@std/uuid@^1.0.7",
+    "fresh": "jsr:@fresh/core@^2.0.0-alpha.37",
+    "preact": "npm:preact@^10.27.0",
+    "preact-render-to-string": "npm:preact-render-to-string@^6.5.11",
+    "@preact/signals": "npm:@preact/signals@^2.2.1",
+    "@std/encoding": "jsr:@std/encoding@1",
+    "@std/path": "jsr:@std/path@1"
+  },
+  "compilerOptions": {
+    "lib": ["dom", "dom.asynciterable", "deno.ns", "deno.unstable"],
+    "jsx": "precompile",
+    "jsxImportSource": "preact",
+    "jsxPrecompileSkipElements": ["a", "img", "source", "body", "html", "head"]
+  }
+}
